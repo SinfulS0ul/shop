@@ -1,0 +1,26 @@
+.form-input{
+  
+  position: relative;
+  label{
+    align-self: flex-start;
+    font-size: 12px;
+    font-weight: bold
+  }
+  input, textarea{
+    background: #F9FAFB;
+    border: 1px solid #DEDEE0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-top: 7px;
+  }
+  textarea{
+    resize: none;
+  }
+}
+
+.invalid-feedback{
+  font-size: 11px;
+  text-align: left;
+  color: red;
+  padding: 0 0;
+}

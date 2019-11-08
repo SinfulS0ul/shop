@@ -1,0 +1,52 @@
+.edit-profile-form{
+  margin: 1% 35%;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 42px rgba(0, 0, 0, 0.111233);
+  border-radius: 7px;
+  padding: 1.5% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  * {
+    padding: 2% 0;
+  }
+  div:not(.round){
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+
+  }
+  .round{
+    width: 90px;
+    position: relative;
+    img{
+      width: 100%;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    input{
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+    .upgrade-photo-button{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-size: 11px;
+      background: #FFFFFF;
+      border: 1px solid #349A89;
+      border-radius: 5px;
+      color: #349A89;
+      padding: 7.7%;
+      cursor: pointer;
+      &:hover{
+        background: #349A89;
+        color: white;
+      }
+    }
+  }
+}

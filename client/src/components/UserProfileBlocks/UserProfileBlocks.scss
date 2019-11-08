@@ -1,0 +1,36 @@
+.user-profile-blocks{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1%;
+  div:not(.text){
+    border: 1.08px solid #E4E4E4;
+    box-shadow: 0px 5px 15px rgba(121, 121, 121, 0.0527344);
+    width: 20%;
+    cursor: pointer;
+  }
+  .block{
+    height: 90.5px;
+    .number{
+      color: #3CB255;
+    }
+    .title{
+      color: #9099A7;
+    }
+  }
+  .active-block{
+    height: 95px;
+    background: #349A89;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 55% 95%, 49% 100%, 43% 95%, 0 95%);
+    color: white;
+  }
+  .number{
+    font-size: 22px;
+  }
+  p{
+    margin: 1% 0;
+  }
+  .text{
+    margin: 10% 0;
+  }
+}

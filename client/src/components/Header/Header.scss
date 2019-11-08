@@ -1,0 +1,115 @@
+$font-size: 14px;
+
+.header {
+  padding: 1% 5%;
+  display: flex;
+  flex-direction: column;
+  .constant-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 45px;
+  }
+}
+
+.constant-header__right-content{
+  display: flex;
+  flex-direction: row;
+  *{
+    margin: 0 4px;
+    align-items: center;
+  }
+  button{
+    border-radius: 4px;
+    border: none;
+    height: 35px;
+  }
+}
+
+.constant-header__right-content__sell-button{
+  background: #349A89;
+  color: white;
+  width: 131px;
+  font-size: $font-size;
+  &:hover{
+    background: rgb(46, 122, 109);
+  }
+}
+
+.constant-header__right-content__login-button{
+  font-size: $font-size;
+  width: 72px;
+  background: #F2F2F2;
+  &:hover{
+    background: rgb(228, 228, 228);
+  }
+  &__blue{
+    font-size: $font-size;
+    width: 72px;
+    background: none;
+    color: white;
+    &:hover{
+    background: rgb(50, 45, 78);
+  }
+  }
+}
+
+.search-input__search-icon, .location-input__room-icon{
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 7px;
+}
+
+.secondary-header{
+  display: flex;
+  flex-direction: row;
+  margin: 3% 15.5% 0 15.5%;
+  justify-content: space-between;
+  button{
+    width: 120px;
+    background: #3E3961;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    &:hover{
+      background: rgb(50, 45, 78);
+    }
+  }
+}
+
+.search-input, .location-input{
+  height: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  input{
+    width: 100%;
+    padding-left: 35px;
+    border-radius: 4px;
+    border: none;
+  }
+}
+
+.location-input{
+  width: 20%;
+}
+
+.search-input{
+  width: 60%;
+}
+
+.nav-link__blue, .nav-link__white{
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.nav-link__blue{
+  color: #3E3961;
+}
+
+.nav-link__white{
+  color: white;
+}

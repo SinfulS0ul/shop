@@ -1,0 +1,88 @@
+.inbox{
+  display: flex;
+  background: white;
+  height: 100vh;
+}
+
+.chats-list{
+  height: 100%;
+  width: 35%;
+  border-radius: 7px;
+  overflow-y : auto;
+    &::-webkit-scrollbar{
+      width: 10px;
+      background-color: #F5F5F5;
+    }
+    &::-webkit-scrollbar-track{
+      -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      background-color: #F5F5F5;
+    }
+    &::-webkit-scrollbar-thumb{
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,.3);
+      background-color: rgb(159, 154, 154);
+      opacity: 0.2;
+    }
+}
+
+.chat-window{
+  width: 65%;
+  border: 1px solid #DEDEE0;
+  .round{
+    width: 50px;
+    height: 50px;
+    margin: 1%;
+    img{
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+  .user-info{
+    display: flex;
+    flex-direction: row;
+    background: #F5F7FB;
+    p{
+      padding: 1% 0;
+    }
+  }
+  .messages-window{
+    height: 84%;
+    overflow-y : auto;
+    &::-webkit-scrollbar{
+      width: 10px;
+      background-color: #F5F5F5;
+    }
+    &::-webkit-scrollbar-track{
+      -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      background-color: #F5F5F5;
+    }
+    &::-webkit-scrollbar-thumb{
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,.3);
+      background-color: rgb(159, 154, 154);
+      opacity: 0.2;
+    }
+  }
+
+  input{
+    border: none;
+    border-top: 1px solid #DEDEE0;
+    width: 97%;
+    padding: 1.5%;
+    ::placeholder{
+      color: #97A3B4;
+    }
+  }
+}
+
+.chat-item{
+  text-align: left;
+  padding: 0 5%;
+  border-bottom: 1.3px solid #EEEFF1;
+  cursor: pointer;
+  &:hover{
+    background: rgb(251, 252, 253);
+  }
+}

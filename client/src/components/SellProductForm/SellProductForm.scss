@@ -1,0 +1,33 @@
+.sell-product__form{
+  form{
+  background: white;
+  margin: 1% 15%;
+  box-shadow: 0px 2px 42px rgba(0, 0, 0, 0.111233);
+  border-radius: 7px;
+  padding: 1.5% 0;
+  
+  div:not(.file-input), p{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20%;
+  }
+
+  * {
+    padding: 2% 0;
+  }
+
+  button {
+    background: #349A89;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    width: 50%;
+    margin: 0 23%;
+
+    &:hover {
+      background: rgb(46, 122, 109);
+    }
+  }
+}
+}

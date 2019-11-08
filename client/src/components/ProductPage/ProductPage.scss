@@ -1,0 +1,123 @@
+.product-full-info{
+  background: #FFFFFF;
+  border: 1.08px solid #E4E4E4;
+  box-shadow: 0px 5px 15px rgba(121, 121, 121, 0.0527344);
+  border-radius: 4.32px;
+  padding-top: 0.2%;
+  width: 70%;
+
+  .product-img{
+    position: relative;
+    .next-button, .prev-button{
+      position: absolute;
+      vertical-align: middle;
+      font-size: 45px;
+      top: 42%;
+      cursor: pointer;
+      color: rgb(255, 255, 255);
+      &:hover{
+        color: rgb(0, 0, 0);
+      }
+    }
+    .next-button{
+      right: 1%;
+    }
+    .prev-button{
+      left: 1%;
+    }
+  }
+
+  .line{
+    border: 1px solid #DEDEE0;
+    background: #DEDEE0;
+    align-self: center;
+    margin: 2%;
+  }
+  img{
+    border-radius: 4px 4px 0px 0px;
+    height: 350px;
+    width: 99%;
+  }
+  p{
+    text-align: left;
+    padding: 0 1vw;
+  }
+  .price-div{
+    position: absolute;
+    background: white;
+    border-radius: 10px 0px 10px 10px;
+    width: 130px;
+    height: 50px;
+    top: -50px;
+    right: 0;
+    p{
+      margin: 10px 10px;
+    }
+  }
+  .product-info{
+    position: relative;
+  }
+}
+
+.product-page{
+  display: flex;
+  flex-direction: row;
+  padding: 1% 19%;
+  .other-info{
+    margin-left: 2%;
+    width: 28%;
+    .seller-info{
+      position: relative;
+      border: 1px solid #DEDEE0;
+      border-radius: 4px;
+      height: 200px;
+      width: 100%;
+      height: 35%;
+      background: linear-gradient(180deg, #349A89 30%, #FFFFFF 0);
+      .round{
+        position: absolute;
+        top: 5vh;
+        right: 6.2vw;
+        width: 9vh;
+        border-radius: 50%;
+        background: none;
+        img{
+          width: 100%;
+          border-radius: 50%;
+        }
+      }
+      p{
+        padding-top: 35%;
+        font-size: 20px;
+      }
+    }
+    button{
+      margin-top: 15px;
+    }
+    .chat-button{
+      border: none;
+      background: #349A89;
+      border-radius: 4px;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      font-size: 14px;
+      width: 100%;
+      height: 9%;
+      &:hover{
+        background: rgb(46, 122, 109);
+      }
+    }
+    .favorite-button{
+      background: #FFFFFF;
+      border: 1px solid #349A89;
+      border-radius: 4px;
+      text-transform: uppercase;
+      font-size: 14px;
+      width: 100%;
+      height: 9%;
+      &:hover{
+        color: rgb(231, 66, 66);
+      }
+    }
+  }
+}

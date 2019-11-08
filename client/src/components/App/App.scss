@@ -1,0 +1,64 @@
+.App {
+  text-align: center;
+  background: #F2F2F2;
+  font-family: Helvetica, Arial, sans-serif;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 100px;
+}
+
+.nav-link{
+  text-decoration: none;
+}
+
+.register-login-div{
+  padding-top: 1%;
+  height: 30px;
+  font-size: 13px;
+}
+
+.login-form, .reset-password-form, .register-form, .reset-password-form, .register-login-div{
+  background: white;
+  margin: 1% 35%;
+  box-shadow: 0px 2px 42px rgba(0, 0, 0, 0.111233);
+  border-radius: 7px;
+}
+
+.login-form, .reset-password-form, .reset-password-form, .register-form{
+  *:not(.password-visibility){
+    padding: 2.5% 0;
+  }
+  div, p{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+  }
+  button {
+    background: #349A89;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    &:hover{
+      background: rgb(46, 122, 109);
+    }
+  }
+}
+
+.password-visibility{
+  position: absolute;
+  cursor: pointer;
+  align-self: flex-end;
+  padding-right: 5px;
+  bottom: 20px;
+}
+
+button{
+  cursor: pointer;
+}
+
+input, .sell-product-modal, .chat-with-seller-modal, textarea , button{
+  &:focus{
+    outline: none;
+  }
+}

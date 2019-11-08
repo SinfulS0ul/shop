@@ -1,0 +1,56 @@
+.dropdown {
+  position: relative;
+  width: 35%;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    li {
+      padding: 2%;
+      border-bottom: 1px solid #DEDEE0;
+      cursor: pointer;
+      text-align: start;
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &:hover {
+        background-color: #F9FAFB;
+      }
+    }
+  }
+
+  .dropdown__frid-icon{
+    position: absolute;
+    left: 0;
+    top: 15%;
+    height: 70%;
+  }
+
+  .dropdown__button {
+    background: #F9FAFB;
+    border: 1px solid #DEDEE0;
+    border-radius: 5px 5px 0 0;
+    color: #505050;
+    padding: 2% 0 1% 9%;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: start;
+    width: 98%;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      border: 8px solid;
+      border-color: #505050 transparent transparent transparent;
+      right: 10px;
+      top: 10px;
+    }
+  }
+}
