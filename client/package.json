@@ -10,7 +10,7 @@
     "express-generator": "^4.16.1",
     "fs": "0.0.1-security",
     "jwt-decode": "^2.2.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "react": "^16.9.0",
     "react-bootstrap": "^1.0.0-beta.12",
     "react-dom": "^16.9.0",
